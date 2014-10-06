@@ -17,7 +17,7 @@ end
 
 get '/gimme' do
   if params[:username]
-    puts $faraday.post('/yoall', {api_token: ENV['YO_API_TOKEN'], username: params[:username], link: 'https://en.wikipedia.org/wiki/Special:Random'})
+    puts $faraday.post('/yo', {api_token: ENV['YO_API_TOKEN'], username: params[:username], link: 'https://en.wikipedia.org/wiki/Special:Random'})
   end
   "enjoy, buddy!"
 end
