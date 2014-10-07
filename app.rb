@@ -8,7 +8,7 @@ end
 
 $brain = YAML.load(File.read('./brain.yml'))
 get '/' do
-  'Subscribe to TODAYILEARNED on YO! to receive a daily little piece of knowledge'
+  'Subscribe and send a Yo! to TODAYILEARNED on YO! to receive a daily little piece of knowledge. ATTENTION: When TODAYILEARNED sends you a YO! tab on the notification! '
 end
 
 get '/today' do
